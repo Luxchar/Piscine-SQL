@@ -1,0 +1,1 @@
+DELETE FROM 'genres' WHERE 'genre_id' = 1;
