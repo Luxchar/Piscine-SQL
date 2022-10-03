@@ -1,1 +1,1 @@
-DELETE FROM 'genres' WHERE 'genre_id' = 1;
+DELETE FROM 'genres' WHERE 'genre_id' = 8;
