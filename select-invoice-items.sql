@@ -1,3 +1,3 @@
-SELECT InvoiceId, Name AS InvoiceItem, UnitPrice FROM invoice_items 
-LEFT JOIN tracks ON tracks.TrackId = invoice_items.TrackId AND tracks.UnitPrice = InvoiceId.UnitPrice;
-WHERE InvoiceId = 10 ORDER BY Name ASC;
+SELECT invoice_items.InvoiceId, tracks.Name AS InvoiceItem, invoice_items.UnitPrice FROM invoice_items 
+INNER JOIN tracks ON tracks.TrackId = invoice_items.TrackId;
+WHERE invoice_items.InvoiceId = 10 ORDER BY Name ASC;
