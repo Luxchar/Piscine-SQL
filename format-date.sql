@@ -1,0 +1,1 @@
+SELECT EmployeeId || ' ' || LastName || ' ' || FirstName || ' ' || HireDate AS HireFrenchDate FROM employees ORDER BY HireDate ASC;
