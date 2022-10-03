@@ -4,4 +4,4 @@
 --     His new job Title : IT Manager
 --     His new superior : Adams Andrew
 
-UPDATE employees SET Title = 'IT Manager', ReportsTo = NULL WHERE LastName = 'King' AND FirstName = 'Robert';
+UPDATE employees SET Title = 'IT Manager', ReportsTo = 1 WHERE LastName = 'King' AND FirstName = 'Robert';
