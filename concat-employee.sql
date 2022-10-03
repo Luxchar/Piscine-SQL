@@ -1,1 +1,1 @@
-SELECT CONCAT(FirstName, ' ', LastName, ' lives in ', City) AS Employee FROM employees; 
+SELECT FirstName || ' ' || LastName || ' lives in ' || City AS Employee FROM employees;
