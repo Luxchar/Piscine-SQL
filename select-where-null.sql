@@ -1,0 +1,1 @@
+SELECT * FROM invoices WHERE BillingState IS NULL AND BillingPostalCode IS NOT NULL AND Total > 10 ;
