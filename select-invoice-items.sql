@@ -1,1 +1,1 @@
-SELECT InvoiceId, TrackId AS InvoiceItem, UnitPrice FROM invoice_items WHERE InvoiceId = 10 ORDER BY TrackId ASC;
+SELECT InvoiceId, Track AS InvoiceItem, UnitPrice FROM invoice_items WHERE InvoiceId = 10 ORDER BY TrackId ASC;
