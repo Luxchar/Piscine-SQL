@@ -1,6 +1,5 @@
-SELECT Total 
-CASE BillingCountry
- WHEN 'France'  THEN  Total + 3
- WHEN 'USA'  THEN  Total + 5
- ELSE  Total + 1
- END FROM invoices
+SELECT CASE 
+    WHEN BillingCountry = 'France' THEN Total + 3
+    WHEN BillingCountry = 'USA' THEN Total + 5
+    ELSE Total + 1
+    END AS Total
