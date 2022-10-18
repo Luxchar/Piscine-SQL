@@ -1,4 +1,4 @@
-SELECT ar.Name, COUNT(al.AlbumId) AS NbAlbums,
+SELECT ar.Name as Name, COUNT(al.AlbumId) AS NbAlbums,
     CASE
         WHEN COUNT(al.AlbumId) = 1 THEN 'Unproductive'
         WHEN COUNT(al.AlbumId) >= 10 THEN 'Very Productive'
@@ -6,6 +6,5 @@ SELECT ar.Name, COUNT(al.AlbumId) AS NbAlbums,
     END AS IsProductive
 FROM artists ar
 INNER JOIN albums al ON ar.ArtistId = al.ArtistId
-GROUP BY ar.Name
-ORDER BY ar.Name
+GROUP BY ar.ArtistId
 LIMIT 100;
