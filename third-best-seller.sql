@@ -1,1 +1,1 @@
-SELECT LastName || ' ' || FirstName AS '3rd Best seller' FROM employees WHERE EmployeeId = 5;
+SELECT LastName || ' ' || FirstName AS '3rd best seller' FROM employees WHERE EmployeeId = 5;
