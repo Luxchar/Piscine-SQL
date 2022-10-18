@@ -7,5 +7,5 @@ SELECT ar.Name, COUNT(al.AlbumId) AS NbAlbums,
 FROM artists ar
 INNER JOIN albums al ON ar.ArtistId = al.ArtistId
 GROUP BY ar.Name
-ORDER BY ar.Name;
+ORDER BY ar.Name
 LIMIT 100;
